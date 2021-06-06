@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src * 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src http://* 'self' 'unsafe-inline'; media-src * blob:">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+		<meta charset="utf-8">
+		
+		<link rel="stylesheet" type="text/css" href="jquery.mobile/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+
+		<script type="text/javascript" charset="utf-8" src="jquery.mobile/jquery-1.12.2.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
+		
+		<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=YOUR_CLIENT_ID"></script>
+		<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=YOUR_APP_KEY"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+		
+        <title>Map Test</title>
+    </head>
+    <body>
+        <div data-role="page" id="page1" data-theme="b" style="background-color:#181818" class="in_map_style">
+			<div role="main" class="ui-content in_map_style">
+				<div id="map1" class="in_map_style"></div>
+			</div>
+			<div data-role="footer" data-position="fixed" data-fullscreen="true">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#page1" data-icon="user" class="ui-btn-active ui-state-persist" data-transition="none">Naver</a></li>
+						<li><a href="#page2" data-icon="star" data-transition="none">Kakao</a></li>
+						<li><a href="#page3" data-icon="tag" data-transition="none">Google</a></li>
+					</ul>
+				</div>
+			</div>
+        </div>
+		<div data-role="page" id="page2" data-theme="b" style="background-color:#181818" class="in_map_style">
+			<div role="main" class="ui-content in_map_style">
+				<div id="map2" class="in_map_style"></div>
+			</div>
+			<div data-role="footer" data-position="fixed" data-fullscreen="true">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#page1" data-icon="user" data-transition="none">Naver</a></li>
+						<li><a href="#page2" data-icon="star" class="ui-btn-active ui-state-persist" data-transition="none">Kakao</a></li>
+						<li><a href="#page3" data-icon="tag" data-transition="none">Google</a></li>
+					</ul>
+				</div>
+			</div>
+        </div>
+		<div data-role="page" id="page3" data-theme="b" style="background-color:#181818" class="in_map_style">
+			<div role="main" class="ui-content in_map_style">
+				<div id="map3" class="in_map_style"></div>
+			</div>
+			<div data-role="footer" data-position="fixed" data-fullscreen="true">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#page1" data-icon="user" data-transition="none">Naver</a></li>
+						<li><a href="#page2" data-icon="star" data-transition="none">Kakao</a></li>
+						<li><a href="#page3" data-icon="tag" class="ui-btn-active ui-state-persist" data-transition="none">Google</a></li>
+					</ul>
+				</div>
+			</div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
